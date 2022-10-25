@@ -1,0 +1,168 @@
+<!DOCTYPE >
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Manipulating the DOM</title>
+    <!-- Load Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+      integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ="
+      crossorigin="anonymous"
+    />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+    <header class="page__header">
+      <nav class="navbar__menu">
+        <!-- Navigation starts as empty UL that will be populated with JS -->
+        <ul id="navbar__list"></ul>
+      </nav>
+    </header>
+    <main>
+      <header class="main__hero">
+        <h1>Landing Page</h1>
+      </header>
+      <button onclick="topFunction()" id="myBtn" title="Go up" class="btn">
+        <i class="fa fa-arrow-up"></i>
+      </button>
+
+      <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+      <section id="section1" data-nav="About me" class="your-active-class">
+        <div class="landing__container">
+          <h2>About me</h2>
+          <p>
+            My name is Mahmoud Moursi, I'm a computer science graduate and 22
+            years old.
+          </p>
+
+          <p>
+            I chose my major because I liked many fields of software development
+            and some of which I wanted to pursue professionally, such as web
+            development and mobile application. Moreover, I have been fascinated
+            by data mining and artificial intelligence implementation in many
+            fields.
+          </p>
+        </div>
+      </section>
+      <section id="section2" data-nav="Education">
+        <div class="landing__container">
+          <h2>Education</h2>
+          <p>
+            During my bachelor's degree, I learned java and took a web
+            development course in which I learned and practiced using languages
+            such as HTML, CSS, and Javascript when it comes to working in
+            front-end development as well as PHP in back-end development.
+          </p>
+
+          <p>
+            I have also taken some optional courses that interested me such as
+            android application development using android studio and systems
+            programming & administration using shell scripts.
+          </p>
+        </div>
+      </section>
+      <section id="section3" data-nav="Skills">
+        <div class="landing__container">
+          <h2>Skills</h2>
+          <ul style="font-size: larger">
+            <li>
+              Language Skills :
+              <ul style="margin-left: 40px">
+                <br />
+                <li>Mother tongue : Arabic</li>
+                <li>Other language(s) : English</li>
+                <br />
+              </ul>
+            </li>
+            <li>
+              Digital Skills :
+              <ul style="margin-left: 40px">
+                <br />
+                <li>Web development : html | css | javascript | php | sql</li>
+                <li>Mobile application development : android studio | java</li>
+                <li>General : C Language | shell script</li>
+                <br />
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="section4" data-nav="Training and courses">
+        <div class="landing__container">
+          <h2>Training and courses</h2>
+          <p>
+            I had a field training course during one of my summer vacations and
+            in it, I worked with a team to develop an online library for the
+            universities’ courses, I worked on the front-end of the online
+            library using HTML, CSS, and bootstrap while my colleagues worked on
+            the back-end. I took this opportunity to understand and get a better
+            look at the working environment of our field.
+          </p>
+          <p>
+            I had two online courses as a part of a scholarship launched by
+            Future Work is Digital initiative with Udacity, the first was a web
+            development course and the second was a software testing course.
+          </p>
+        </div>
+      </section>
+
+      <section id="section5" data-nav="Awards and projects">
+        <div class="landing__container">
+          <h2>Awards and projects</h2>
+          <ul style="margin-left: 40px; font-size: larger">
+            <li>
+              Third place at an on-paper java programming contest<br />During my
+              third semester as a junior student.
+            </li>
+            <br />
+            <li>
+              First place at DevelopforCOVID19 hackathon<br />Organized by my
+              university, I came up with the idea and the design of a smartphone
+              application that provides diagnoses for covid-19 based on users’
+              inputs and worked with my partner on a prototype.
+            </li>
+          </ul>
+          <hr />
+          <br />
+          <p>
+            I developed an online survey that is meant to evaluate and enhance
+            the level of cybersecurity awareness of the students in my
+            university, I have worked on both the front-end and the back-end of
+            the survey so that the survey would come up with suggestions to the
+            participant depending on what areas they do not have a high level of
+            awareness in and made a page that would display charts showing
+            information about the participants and their answers using the data
+            stored in the database and I have tasked my partner to come up with
+            the questions for the survey.
+          </p>
+        </div>
+      </section>
+
+      <!-- <section id="section6" data-nav="debug">
+      <div class="landing__container">
+        <h2>debug</h2>
+          <button onclick="adder()"></button>    
+      </div>
+    </section> -->
+    </main>
+    <footer class="page__footer">
+      <p>&copy Udacity</p>
+    </footer>
+
+    <script defer src="js/app.js"></script>
+  </body>
+</html>
