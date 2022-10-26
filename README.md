@@ -21,8 +21,6 @@ This is the landing page project readme.
 ## Helping resources
 
 - Starter code taken from udacity [repository](https://github.com/udacity/fend/tree/refresh-2019/projects/landing-page).
-- I learned a lot through this project, especially for the Intersection_Observer_API:
-- [Intersection_Observer_API](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API)
 - [How to use Array forEach](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 - [GetBoundingClientRect Method](https://developer.mozilla.org/en-US/docs/Web/API/Element/getBoundingClientRect)
 - [How-to-select-all-links-inside-of-nav-element](https://stackoverflow.com/questions/41085068/how-to-select-all-links-inside-of-nav-element)
