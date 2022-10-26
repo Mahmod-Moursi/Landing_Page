@@ -53,7 +53,7 @@
 - First, open your browser
 - Second you click `ctrl+o`
 - Third you navigate to your index.html and open it
-- During the scrolling the navbar is automatically hidden and shown according to the direction of the scrolling.
+- During the scrolling, the section being viewed will be highlighted as well as their corresponding links in the navigation bar
 - When scrolling past a configurable buffer, a new element will appear close to the bottom of the page. The users can use this element to scroll to the very top of the page
 
 ## Updates and future changes
