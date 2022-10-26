@@ -1,6 +1,6 @@
 # Landing Page Project
 
- This is the landing page project readme.
+This is the landing page project readme.
 
 ## Description
 
