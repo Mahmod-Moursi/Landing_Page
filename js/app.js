@@ -48,13 +48,14 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
+  // When the user scrolls down 900px from the top of the document
   if (
     document.body.scrollTop > 900 ||
     document.documentElement.scrollTop > 900
   ) {
-    mybutton.style.display = "block";
+    mybutton.style.display = "block"; // show the button
   } else {
-    mybutton.style.display = "none";
+    mybutton.style.display = "none"; // hide the button
   }
 }
 // call the function When the user clicks on the button, scroll to the top of the document
@@ -72,7 +73,7 @@ function navBuilder() {
     // create a list item element and an anchor element
     const listItem = document.createElement("li");
     const listAnch = document.createElement("a");
-    // add an href and text content
+    // add the href and text content of the section to the newly created anchor element
     listAnch.href = `#` + secId;
     listAnch.textContent = secTitle;
     listAnch.classList.add("menu__link");
@@ -92,7 +93,7 @@ function navBuilder() {
   // add the fragment to the unordered list
   list.appendChild(fragment);
 }
-// build the nav
+// build the navigation bar using the function above once the HTML document has been completely parsed and scripts executed
 window.addEventListener("DOMContentLoaded", navBuilder);
 // the function below will highlight the section that is currently in the viewport as well as its corresponding link in the navigation bar
 function highlight() {
@@ -114,19 +115,11 @@ function highlight() {
     }
   });
 }
-
+//whenever the user scrolls, check and use the function above to highlight the section that is currently in the viewport as well as its corresponding link in the navigation bar
 window.addEventListener("scroll", highlight);
-
-// Scroll to anchor ID using scrollTO event
 
 /**
  * End Main Functions
  * Begin Events
  *
  */
-
-// Build menu
-
-// Scroll to section on link click
-
-// Set sections as active
